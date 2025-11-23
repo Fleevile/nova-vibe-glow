@@ -1,0 +1,233 @@
+.card-wrapper {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-wrapper:hover {
+  transform: translateY(-8px);
+}
+
+.card {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.card__media img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card__media img {
+  transform: scale(1.08);
+}
+
+.card__heading {
+  transition: color 0.3s ease;
+}
+
+.card:hover .card__heading {
+  color: #0A7EA4;
+}
+
+.button,
+.shopify-payment-button__button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+
+.button:hover::after {
+  width: 400px;
+  height: 400px;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(10, 126, 164, 0.3);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.media--hover-effect img + img {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.media--hover-effect:hover img + img {
+  opacity: 1;
+}
+
+.media--hover-effect img:first-child {
+  transition: opacity 0.4s ease;
+}
+
+.media--hover-effect:hover img:first-child {
+  opacity: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+  transition: all 0.3s ease;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0A7EA4;
+  box-shadow: 0 0 0 3px rgba(10, 126, 164, 0.1);
+  transform: translateY(-1px);
+}
+
+.header {
+  transition: all 0.3s ease;
+}
+
+.scrolled-past-header .header {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.price {
+  transition: color 0.2s ease;
+}
+
+.badge {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.quantity-input {
+  transition: all 0.2s ease;
+}
+
+.quantity-input:focus-within {
+  box-shadow: 0 0 0 3px rgba(10, 126, 164, 0.15);
+  border-color: #0A7EA4;
+}
+
+.cart-item {
+  transition: background-color 0.2s ease;
+}
+
+.cart-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.announcement-bar {
+  transition: transform 0.3s ease;
+}
+
+a:not(.button) {
+  transition: color 0.2s ease;
+}
+
+.icon {
+  transition: transform 0.2s ease;
+}
+
+a:hover .icon {
+  transform: scale(1.1);
+}
+
+.product-form__input {
+  transition: all 0.2s ease;
+}
+
+.product-form__input:hover {
+  border-color: #0A7EA4;
+}
+
+.product-form__input input:checked + label {
+  animation: selectPulse 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes selectPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.drawer {
+  animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.modal {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section {
+  animation: sectionFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
