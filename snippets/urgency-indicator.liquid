@@ -1,0 +1,69 @@
+{% comment %}
+  Renders urgency indicators to drive conversions
+  Usage:
+  {% render 'urgency-indicator', product: product %}
+{% endcomment %}
+
+<div class="urgency-indicators">
+  <div class="stock-indicator">
+    <span>Only <strong>{{ product.variants.first.inventory_quantity | default: 7 }}</strong> left in stock!</span>
+  </div>
+
+  <div class="social-proof">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="8" cy="8" r="7" stroke="#FF6B35" stroke-width="2" fill="none"/>
+      <circle cx="8" cy="8" r="3" fill="#FF6B35"/>
+    </svg>
+    <span><strong>23 people</strong> are viewing this right now</span>
+  </div>
+</div>
+
+<style>
+  .urgency-indicators {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 2rem 0;
+  }
+
+  .social-proof {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #FF6B35;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .social-proof svg {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.1);
+    }
+  }
+
+  .social-proof strong,
+  .stock-indicator strong {
+    color: #FF512F;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 749px) {
+    .urgency-indicators {
+      gap: 1rem;
+    }
+
+    .stock-indicator,
+    .social-proof {
+      font-size: 1.3rem;
+    }
+  }
+</style>

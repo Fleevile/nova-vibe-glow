@@ -48,13 +48,16 @@
             "show_gift_card_recipient": false
           }
         },
-        "trust_badges": {
-          "type": "badges-custom",
+        "urgency": {
+          "type": "custom_liquid",
           "settings": {
-            "text": "SECURE CHECKOUT",
-            "text_2": "30-DAY GUARANTEE",
-            "text_3": "FREE SHIPPING",
-            "text_4": "24/7 SUPPORT"
+            "custom_liquid": "{% render 'urgency-indicator', product: product %}"
+          }
+        },
+        "trust_badges": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'trust-badges' %}"
           }
         }
       },
@@ -63,6 +66,7 @@
         "title",
         "hero_description",
         "price",
+        "urgency",
         "benefits",
         "variant_picker",
         "quantity_selector",
