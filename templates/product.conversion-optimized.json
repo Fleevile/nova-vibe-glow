@@ -16,7 +16,7 @@
         "hero_description": {
           "type": "hero_description",
           "settings": {
-            "hero_description": "<p>The complete grooming solution for men who want a sharp, clean look without juggling multiple tools. Get a close shave, precise trim, and detailed grooming—all with one device.</p>"
+            "hero_description": "<p>The complete 3-in-1 grooming solution for men who want a sharp, clean look without juggling multiple tools. Get a rotary shave, nose trimming, and sideburn trimming—all in one cordless, rechargeable device that works wet or dry.</p>"
           }
         },
         "price": {
@@ -25,11 +25,11 @@
         "benefits": {
           "type": "benefits",
           "settings": {
-            "benefit_1": "3 tools in 1 device—saves money and bathroom space",
-            "benefit_2": "Cut grooming time in half with quick, efficient results",
-            "benefit_3": "Works on all beard types and skin sensitivities",
-            "benefit_4": "Rechargeable battery—up to 60 minutes cordless use",
-            "benefit_5": "Easy to clean under running water in seconds"
+            "benefit_1": "3-in-1 design—rotary shaver, nose trimmer, and sideburn trimmer in one device",
+            "benefit_2": "Cordless and rechargeable with 500mAh lithium battery for convenient grooming",
+            "benefit_3": "Wet or dry use—shave the way you prefer, with or without water",
+            "benefit_4": "Compact, ergonomic design (9.5 × 7 × 18.8 cm) perfect for home and travel",
+            "benefit_5": "Complete everyday grooming solution keeps you looking neat and polished"
           }
         },
         "variant_picker": {
@@ -91,22 +91,22 @@
         "step_1": {
           "type": "step",
           "settings": {
-            "step_title": "Charge it up",
-            "step_description": "<p>Fully charge your razor using the included USB cable. One full charge gives you up to 60 minutes of cordless grooming.</p>"
+            "step_title": "Charge it fully",
+            "step_description": "<p>Charge your razor for about 2 hours using the included cable. The built-in 500mAh lithium battery provides cordless convenience for your grooming routine.</p>"
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
             "step_title": "Choose your head",
-            "step_description": "<p>Attach the shaver head for a close shave, the trimmer for your beard, or the detail groomer for edges and neckline. Switch between them in seconds.</p>"
+            "step_description": "<p>Select the rotary shaver for a close shave, the nose trimmer for precision grooming, or the sideburn trimmer for neat edges. Switch between heads easily as needed.</p>"
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
-            "step_title": "Groom with confidence",
-            "step_description": "<p>Power on and glide smoothly over your face. The razor adjusts to your contours for a comfortable, irritation-free experience. Rinse clean when done.</p>"
+            "step_title": "Groom wet or dry",
+            "step_description": "<p>Use your razor on dry skin for quick grooming, or with water for a more comfortable shave—your choice. When finished, detach the head and clean according to the included instructions.</p>"
           }
         }
       },
@@ -125,36 +125,36 @@
         "feature_1": {
           "type": "feature",
           "settings": {
-            "feature_title": "No more clutter",
-            "feature_description": "<p>Replace your separate razor, trimmer, and groomer with one sleek device. Save counter space and simplify your routine.</p>"
+            "feature_title": "All-in-one grooming",
+            "feature_description": "<p>Replace your separate shaver, nose trimmer, and sideburn trimmer with one versatile device. Simplify your routine and save valuable counter space.</p>"
           }
         },
         "feature_2": {
           "type": "feature",
           "settings": {
-            "feature_title": "Skin-friendly design",
-            "feature_description": "<p>Hypoallergenic blades and smooth glide technology reduce irritation, even on sensitive skin. Say goodbye to razor burn and discomfort.</p>"
+            "feature_title": "Cordless convenience",
+            "feature_description": "<p>The rechargeable 500mAh lithium battery gives you the freedom to groom anywhere without being tethered to an outlet. Charges in about 2 hours for cordless use.</p>"
           }
         },
         "feature_3": {
           "type": "feature",
           "settings": {
-            "feature_title": "Built to last",
-            "feature_description": "<p>Premium stainless steel blades stay sharp for years. This isn't a disposable razor—it's an investment in looking your best every day.</p>"
+            "feature_title": "Wet or dry flexibility",
+            "feature_description": "<p>Prefer a quick dry shave or a more comfortable wet shave? This razor handles both. Use it the way that works best for your routine and skin preference.</p>"
           }
         },
         "feature_4": {
           "type": "feature",
           "settings": {
-            "feature_title": "Perfect for travel",
-            "feature_description": "<p>Compact, cordless, and TSA-friendly. Toss it in your bag and maintain your grooming routine anywhere—from the gym to business trips.</p>"
+            "feature_title": "Compact and travel-ready",
+            "feature_description": "<p>At just 9.5 × 7 × 18.8 cm, this ergonomic razor fits easily in your bag. Take it to the gym, on trips, or keep it in your desk drawer for touch-ups.</p>"
           }
         },
         "feature_5": {
           "type": "feature",
           "settings": {
-            "feature_title": "Saves you money",
-            "feature_description": "<p>Stop buying replacement cartridges and disposable razors. One purchase gives you everything you need for years of grooming.</p>"
+            "feature_title": "Practical everyday upgrade",
+            "feature_description": "<p>Designed for everyday use with interchangeable heads for different grooming needs. Keep yourself looking neat and polished without complicated routines or multiple devices.</p>"
           }
         }
       },
@@ -162,7 +162,7 @@
       "settings": {
         "heading": "Why choose the 3-in-1 razor",
         "heading_size": "h1",
-        "subheading": "<p>Discover why thousands of men have ditched their drawer full of grooming tools for this all-in-one solution.</p>",
+        "subheading": "<p>See why men are choosing this versatile grooming tool for their everyday routine.</p>",
         "color_scheme": "background-1",
         "padding_top": 48,
         "padding_bottom": 48
@@ -181,8 +181,8 @@
         "persona_2": {
           "type": "persona",
           "settings": {
-            "persona_title": "Men with sensitive skin",
-            "persona_description": "<p>Tired of razor burn, irritation, and ingrown hairs? This gentle, hypoallergenic razor gives you a clean look without the discomfort.</p>"
+            "persona_title": "Men who value versatility",
+            "persona_description": "<p>Want one device that handles multiple grooming tasks? From close shaves to precise nose trimming, this all-in-one tool does it all.</p>"
           }
         },
         "persona_3": {
@@ -195,8 +195,8 @@
         "persona_4": {
           "type": "persona",
           "settings": {
-            "persona_title": "Anyone tired of buying cartridges",
-            "persona_description": "<p>Stop wasting money on expensive replacement blades. This razor pays for itself in just a few months compared to disposable options.</p>"
+            "persona_title": "Anyone seeking simplicity",
+            "persona_description": "<p>Want to simplify your grooming routine without sacrificing results? This rechargeable, multi-use razor keeps things straightforward and effective.</p>"
           }
         }
       },
@@ -217,49 +217,49 @@
           "type": "question",
           "settings": {
             "question": "Is this safe for sensitive skin?",
-            "answer": "<p>Yes! The 3-in-1 razor features hypoallergenic blades and smooth glide technology designed specifically to minimize irritation. Many of our customers with sensitive skin report less razor burn and discomfort compared to traditional razors. If you have concerns, we recommend starting on the trimmer setting and adjusting as your skin adapts.</p>"
+            "answer": "<p>This razor is designed for everyday grooming use. If you have sensitive skin, we recommend starting with the wet shaving option or the trimmer settings, and testing on a small area first to see how your skin responds. Always follow the included usage instructions.</p>"
           }
         },
         "question_2": {
           "type": "question",
           "settings": {
             "question": "How do I clean and maintain the razor?",
-            "answer": "<p>Cleaning is easy! After each use, rinse the blade heads under running water for a few seconds—that's it. For deeper cleaning once a week, remove the heads and use the included brush to remove any trapped hair. The razor is water-resistant but should not be fully submerged. Let it air dry before storing.</p>"
+            "answer": "<p>After each use, detach the head and remove any trapped hairs using the included cleaning brush. You can rinse removable parts if appropriate, following the instructions in your user manual. Make sure all parts are dry before reassembling. Regular cleaning helps maintain performance.</p>"
           }
         },
         "question_3": {
           "type": "question",
           "settings": {
             "question": "How long does the battery last?",
-            "answer": "<p>A full charge provides up to 60 minutes of continuous use—enough for 3-4 weeks of daily grooming for most men. Charging takes approximately 2 hours using the included USB cable. The LED indicator shows when charging is complete. You can also use it while plugged in if you forget to charge.</p>"
+            "answer": "<p>The razor features a 500mAh lithium battery that takes about 2 hours to fully charge. Actual usage time will vary depending on how you use it, your grooming routine, and other factors. Charge it fully before first use and recharge as needed to maintain performance.</p>"
           }
         },
         "question_4": {
           "type": "question",
           "settings": {
             "question": "Can I use this for wet shaving or just dry?",
-            "answer": "<p>The razor is designed primarily for dry use, which is what makes it so quick and convenient. However, it's water-resistant, so you can safely rinse your face before use. For best results and blade longevity, we recommend dry shaving or using it on slightly damp (not wet) skin.</p>"
+            "answer": "<p>Yes, this razor is designed for both wet and dry use. You can use it for a quick dry shave when you're in a hurry, or with water for a more comfortable grooming experience. Choose the method that works best for your preference and routine.</p>"
           }
         },
         "question_5": {
           "type": "question",
           "settings": {
             "question": "What's included in the box?",
-            "answer": "<p>Your package includes: the main razor unit, 3 interchangeable heads (shaver, trimmer, detail groomer), USB charging cable, cleaning brush, protective travel cap, and a user manual with grooming tips. Everything you need to get started arrives ready to use.</p>"
+            "answer": "<p>Your package includes the main razor unit with 3 interchangeable heads (rotary shaver, nose trimmer, and sideburn trimmer), charging cable, cleaning brush, and user manual with instructions. Check the manual for complete details on what's included and how to use each component.</p>"
           }
         },
         "question_6": {
           "type": "question",
           "settings": {
             "question": "How long does shipping take?",
-            "answer": "<p>We process orders within 1-2 business days. Standard shipping takes 3-5 business days, and express shipping takes 1-2 business days. You'll receive a tracking number as soon as your order ships. Free shipping is included on all orders over $50.</p>"
+            "answer": "<p>Orders are typically processed within 1-2 business days. Standard shipping usually takes 5-7 business days, though delivery times may vary by location. You'll receive tracking information once your order ships so you can monitor its progress.</p>"
           }
         },
         "question_7": {
           "type": "question",
           "settings": {
             "question": "What if I'm not satisfied with my purchase?",
-            "answer": "<p>We offer a 30-day money-back guarantee. If you're not completely satisfied, return the razor in its original condition within 30 days for a full refund—no questions asked. We want you to love your grooming routine, and we stand behind our product 100%.</p>"
+            "answer": "<p>We offer a 30-day return policy. If you're not satisfied with your purchase, you may return it in its original, unused condition within 30 days for a refund according to our return policy. Please contact our customer service team to initiate a return.</p>"
           }
         }
       },
