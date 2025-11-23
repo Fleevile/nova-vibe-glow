@@ -16,7 +16,7 @@
         "hero_description": {
           "type": "hero_description",
           "settings": {
-            "hero_description": "<p>The complete 3-in-1 grooming solution for men who want a sharp, clean look without juggling multiple tools. Get a rotary shave, nose trimming, and sideburn trimming—all in one cordless, rechargeable device that works wet or dry.</p>"
+            "hero_description": "<p>An at-home electric blackhead remover and pore cleaner that helps cleanse pores and remove impurities, leaving your skin looking fresher and smoother. This rechargeable, cordless device is compact (170 × 37 × 14 mm) and perfect for home or travel use.</p>"
           }
         },
         "price": {
@@ -25,11 +25,11 @@
         "benefits": {
           "type": "benefits",
           "settings": {
-            "benefit_1": "3-in-1 design—rotary shaver, nose trimmer, and sideburn trimmer in one device",
-            "benefit_2": "Cordless and rechargeable with 500mAh lithium battery for convenient grooming",
-            "benefit_3": "Wet or dry use—shave the way you prefer, with or without water",
-            "benefit_4": "Compact, ergonomic design (9.5 × 7 × 18.8 cm) perfect for home and travel",
-            "benefit_5": "Complete everyday grooming solution keeps you looking neat and polished"
+            "benefit_1": "Helps with deep pore cleansing and blackhead removal support",
+            "benefit_2": "Five interchangeable suction heads for different facial areas and needs",
+            "benefit_3": "Rechargeable, cordless convenience for easy at-home use",
+            "benefit_4": "Compact, travel-friendly design at 170 × 37 × 14 mm",
+            "benefit_5": "Skin looks smoother and more refined with regular, gentle use"
           }
         },
         "variant_picker": {
@@ -91,28 +91,28 @@
         "step_1": {
           "type": "step",
           "settings": {
-            "step_title": "Charge it fully",
-            "step_description": "<p>Charge your razor for about 2 hours using the included cable. The built-in 500mAh lithium battery provides cordless convenience for your grooming routine.</p>"
+            "step_title": "Charge the device",
+            "step_description": "<p>Fully charge your blackhead remover using the included charging cable. The rechargeable battery provides cordless convenience for at-home or travel use.</p>"
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
-            "step_title": "Choose your head",
-            "step_description": "<p>Select the rotary shaver for a close shave, the nose trimmer for precision grooming, or the sideburn trimmer for neat edges. Switch between heads easily as needed.</p>"
+            "step_title": "Choose the suction head",
+            "step_description": "<p>Select from the five different suction heads based on your skin area and needs. Each head is designed for different facial zones or suction levels.</p>"
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
-            "step_title": "Groom wet or dry",
-            "step_description": "<p>Use your razor on dry skin for quick grooming, or with water for a more comfortable shave—your choice. When finished, detach the head and clean according to the included instructions.</p>"
+            "step_title": "Gently glide over skin",
+            "step_description": "<p>Gently move the device over your skin to help remove impurities and excess oil. Follow the user manual instructions for safe and effective use. Clean the suction heads after each use.</p>"
           }
         }
       },
       "block_order": ["step_1", "step_2", "step_3"],
       "settings": {
-        "heading": "How to use your 3-in-1 razor",
+        "heading": "How to use your blackhead remover",
         "heading_size": "h1",
         "color_scheme": "background-2",
         "padding_top": 48,
@@ -125,44 +125,44 @@
         "feature_1": {
           "type": "feature",
           "settings": {
-            "feature_title": "All-in-one grooming",
-            "feature_description": "<p>Replace your separate shaver, nose trimmer, and sideburn trimmer with one versatile device. Simplify your routine and save valuable counter space.</p>"
+            "feature_title": "At-home pore cleansing convenience",
+            "feature_description": "<p>Enjoy the convenience of at-home facial cleansing without visiting a spa. This electric blackhead remover helps you maintain cleaner-looking pores in the comfort of your own home.</p>"
           }
         },
         "feature_2": {
           "type": "feature",
           "settings": {
-            "feature_title": "Cordless convenience",
-            "feature_description": "<p>The rechargeable 500mAh lithium battery gives you the freedom to groom anywhere without being tethered to an outlet. Charges in about 2 hours for cordless use.</p>"
+            "feature_title": "Personalized experience with five suction heads",
+            "feature_description": "<p>Switch between five different suction heads to customize your skincare routine. Each head is designed for specific facial areas or suction levels, giving you flexibility for different skin needs.</p>"
           }
         },
         "feature_3": {
           "type": "feature",
           "settings": {
-            "feature_title": "Wet or dry flexibility",
-            "feature_description": "<p>Prefer a quick dry shave or a more comfortable wet shave? This razor handles both. Use it the way that works best for your routine and skin preference.</p>"
+            "feature_title": "Rechargeable, cordless design",
+            "feature_description": "<p>The built-in rechargeable battery means no cords or wires to deal with during use. Enjoy cordless freedom and flexibility as you cleanse your pores anywhere in your home.</p>"
           }
         },
         "feature_4": {
           "type": "feature",
           "settings": {
-            "feature_title": "Compact and travel-ready",
-            "feature_description": "<p>At just 9.5 × 7 × 18.8 cm, this ergonomic razor fits easily in your bag. Take it to the gym, on trips, or keep it in your desk drawer for touch-ups.</p>"
+            "feature_title": "Compact size and easy storage",
+            "feature_description": "<p>Measuring just 170 × 37 × 14 mm, this device is incredibly compact and easy to store. Toss it in your travel bag or keep it in your bathroom drawer—perfect for home or on-the-go skincare.</p>"
           }
         },
         "feature_5": {
           "type": "feature",
           "settings": {
-            "feature_title": "Practical everyday upgrade",
-            "feature_description": "<p>Designed for everyday use with interchangeable heads for different grooming needs. Keep yourself looking neat and polished without complicated routines or multiple devices.</p>"
+            "feature_title": "A practical upgrade over manual methods",
+            "feature_description": "<p>Move beyond manual squeezing or single-use pore strips. This electric device offers a more controlled approach to help remove blackheads and impurities, making your skincare routine easier and more effective.</p>"
           }
         }
       },
       "block_order": ["feature_1", "feature_2", "feature_3", "feature_4", "feature_5"],
       "settings": {
-        "heading": "Why choose the 3-in-1 razor",
+        "heading": "Why choose this blackhead remover",
         "heading_size": "h1",
-        "subheading": "<p>See why men are choosing this versatile grooming tool for their everyday routine.</p>",
+        "subheading": "<p>Discover why this at-home pore cleansing device is becoming a skincare essential.</p>",
         "color_scheme": "background-1",
         "padding_top": 48,
         "padding_bottom": 48
@@ -174,37 +174,37 @@
         "persona_1": {
           "type": "persona",
           "settings": {
-            "persona_title": "Busy guys on the go",
-            "persona_description": "<p>You need to look sharp fast, whether it's before work, the gym, or a date. No time for complicated grooming routines with multiple tools.</p>"
+            "persona_title": "People with visible blackheads or clogged pores",
+            "persona_description": "<p>You want clearer-looking skin and are looking for a practical at-home solution to help cleanse pores and remove excess oil and impurities that can build up over time.</p>"
           }
         },
         "persona_2": {
           "type": "persona",
           "settings": {
-            "persona_title": "Men who value versatility",
-            "persona_description": "<p>Want one device that handles multiple grooming tasks? From close shaves to precise nose trimming, this all-in-one tool does it all.</p>"
+            "persona_title": "Anyone seeking at-home skincare convenience",
+            "persona_description": "<p>You prefer the convenience and privacy of at-home skincare treatments rather than frequent spa visits. This device helps you maintain your routine on your own schedule.</p>"
           }
         },
         "persona_3": {
           "type": "persona",
           "settings": {
-            "persona_title": "Guys who travel often",
-            "persona_description": "<p>Frequent flyer or weekend warrior? Pack one device instead of three. Keep your grooming routine consistent no matter where you are.</p>"
+            "persona_title": "Frequent travelers",
+            "persona_description": "<p>You travel often and want to maintain your skincare routine on the go. This compact, cordless device fits easily in your luggage without taking up valuable space.</p>"
           }
         },
         "persona_4": {
           "type": "persona",
           "settings": {
-            "persona_title": "Anyone seeking simplicity",
-            "persona_description": "<p>Want to simplify your grooming routine without sacrificing results? This rechargeable, multi-use razor keeps things straightforward and effective.</p>"
+            "persona_title": "Those looking to upgrade their pore care",
+            "persona_description": "<p>You've tried pore strips or manual extraction but want something more controlled and reusable. This electric remover offers a step up from one-time-use products.</p>"
           }
         }
       },
       "block_order": ["persona_1", "persona_2", "persona_3", "persona_4"],
       "settings": {
-        "heading": "Is this razor right for you?",
+        "heading": "Is this blackhead remover right for you?",
         "heading_size": "h1",
-        "description": "<p>This 3-in-1 electric razor is perfect for men who want an easy, effective grooming solution without the hassle of multiple tools.</p>",
+        "description": "<p>This electric blackhead remover is ideal for anyone looking to improve their at-home skincare routine with deeper pore cleansing.</p>",
         "color_scheme": "background-2",
         "padding_top": 48,
         "padding_bottom": 48
@@ -216,36 +216,36 @@
         "question_1": {
           "type": "question",
           "settings": {
-            "question": "Is this safe for sensitive skin?",
-            "answer": "<p>This razor is designed for everyday grooming use. If you have sensitive skin, we recommend starting with the wet shaving option or the trimmer settings, and testing on a small area first to see how your skin responds. Always follow the included usage instructions.</p>"
+            "question": "How do I use this safely and gently?",
+            "answer": "<p>Always follow the user manual for safe operation. Use gentle, gliding motions and avoid leaving the device in one spot for too long. Start with the lowest suction setting to see how your skin responds, and never use on broken, irritated, or inflamed skin.</p>"
           }
         },
         "question_2": {
           "type": "question",
           "settings": {
-            "question": "How do I clean and maintain the razor?",
-            "answer": "<p>After each use, detach the head and remove any trapped hairs using the included cleaning brush. You can rinse removable parts if appropriate, following the instructions in your user manual. Make sure all parts are dry before reassembling. Regular cleaning helps maintain performance.</p>"
+            "question": "How do I clean the suction heads?",
+            "answer": "<p>After each use, detach the suction head and rinse it gently with water to remove impurities and oils. Allow it to air dry completely before reattaching. Regular cleaning after each use helps maintain hygiene and device performance.</p>"
           }
         },
         "question_3": {
           "type": "question",
           "settings": {
-            "question": "How long does the battery last?",
-            "answer": "<p>The razor features a 500mAh lithium battery that takes about 2 hours to fully charge. Actual usage time will vary depending on how you use it, your grooming routine, and other factors. Charge it fully before first use and recharge as needed to maintain performance.</p>"
+            "question": "How often should I use this device?",
+            "answer": "<p>We recommend starting slowly—perhaps once or twice per week—to see how your skin responds. You can adjust frequency based on your skin's comfort level. Avoid overuse, as excessive suction can irritate the skin. Always allow your skin time to recover between uses.</p>"
           }
         },
         "question_4": {
           "type": "question",
           "settings": {
-            "question": "Can I use this for wet shaving or just dry?",
-            "answer": "<p>Yes, this razor is designed for both wet and dry use. You can use it for a quick dry shave when you're in a hurry, or with water for a more comfortable grooming experience. Choose the method that works best for your preference and routine.</p>"
+            "question": "Is this suitable for all skin types?",
+            "answer": "<p>This device is designed for facial cleansing, but individual skin reactions can vary. We recommend doing a patch test on a small area first and starting with the gentlest suction setting. If you have very sensitive skin, acne, rosacea, or other skin conditions, consult with a skincare professional before use.</p>"
           }
         },
         "question_5": {
           "type": "question",
           "settings": {
-            "question": "What's included in the box?",
-            "answer": "<p>Your package includes the main razor unit with 3 interchangeable heads (rotary shaver, nose trimmer, and sideburn trimmer), charging cable, cleaning brush, and user manual with instructions. Check the manual for complete details on what's included and how to use each component.</p>"
+            "question": "What about charging and battery life?",
+            "answer": "<p>The device features a rechargeable battery that can be charged using the included cable. Charging time and usage duration will vary based on the specific battery capacity and your usage patterns. Charge fully before first use and recharge as needed. The device is cordless during use for maximum convenience.</p>"
           }
         },
         "question_6": {
@@ -259,7 +259,7 @@
           "type": "question",
           "settings": {
             "question": "What if I'm not satisfied with my purchase?",
-            "answer": "<p>We offer a 30-day return policy. If you're not satisfied with your purchase, you may return it in its original, unused condition within 30 days for a refund according to our return policy. Please contact our customer service team to initiate a return.</p>"
+            "answer": "<p>We offer a 30-day return policy. If you're not satisfied with your purchase, you may return it in its original condition within 30 days according to our return policy. Please contact our customer service team to initiate a return and obtain return instructions.</p>"
           }
         }
       },
@@ -267,7 +267,7 @@
       "settings": {
         "heading": "Your questions answered",
         "heading_size": "h1",
-        "subheading": "<p>Everything you need to know about your 3-in-1 razor. Still have questions? Our support team is here to help 24/7.</p>",
+        "subheading": "<p>Everything you need to know about your blackhead remover. Still have questions? Our support team is here to help.</p>",
         "color_scheme": "background-1",
         "padding_top": 48,
         "padding_bottom": 48
