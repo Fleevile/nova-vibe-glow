@@ -1,0 +1,185 @@
+<section id="badge-footer-{{ section.id }}">
+  <div class="page-width">
+    <div class="grid-ct-badges-footer">
+      
+      {%- if section.settings.image != blank -%}
+        <div class="item-ct-badges-footer">
+          <img src="{{ section.settings.image |  img_url: 'master' }}" alt="{{ section.settings.text }}">
+          <p>{{ section.settings.text }}</p>
+        </div>
+      {%- elsif section.settings.image == blank -%}
+        <div class="item-ct-badges-footer">
+          <img src="{{ '1.svg' | asset_url }}" alt="{{ section.settings.text }}">
+          <p>{{ section.settings.text }}</p>
+        </div>
+      {%- endif -%}
+      
+      {%- if section.settings.image_2 != blank -%}
+        <div class="item-ct-badges-footer">
+          <img src="{{ section.settings.image_2 |  img_url: 'master' }}" alt="{{ section.settings.text }}">
+          <p>{{ section.settings.text_2 }}</p>
+        </div>
+      {%- elsif section.settings.image_2 == blank -%}
+        <div class="item-ct-badges-footer">
+          <img src="{{ '2.svg' | asset_url }}" alt="{{ section.settings.text }}">
+          <p>{{ section.settings.text_2 }}</p>
+        </div>
+      {%- endif -%}
+      
+      {%- if section.settings.image_3 != blank -%}
+        <div class="item-ct-badges-footer">
+          <img src="{{ section.settings.image_3 |  img_url: 'master' }}" alt="{{ section.settings.text }}">
+          <p>{{ section.settings.text_3 }}</p>
+        </div>
+      {%- elsif section.settings.image_3 == blank -%}
+        <div class="item-ct-badges-footer">
+          <img src="{{ '3.svg' | asset_url }}" alt="{{ section.settings.text }}">
+          <p>{{ section.settings.text_3 }}</p>
+        </div>
+      {%- endif -%}
+      
+      {%- if section.settings.image_4 != blank -%}
+        <div class="item-ct-badges-footer">
+          <img src="{{ section.settings.image_4 |  img_url: 'master' }}" alt="{{ section.settings.text }}">
+          <p>{{ section.settings.text_4 }}</p>
+        </div>
+      {%- elsif section.settings.image_4 == blank -%}
+        <div class="item-ct-badges-footer">
+          <img src="{{ '4.svg' | asset_url }}" alt="{{ section.settings.text }}">
+          <p>{{ section.settings.text_4 }}</p>
+        </div>
+      {%- endif -%}
+      
+      <!-- <div class="item-ct-badges-footer">
+        <img src="{{ section.settings.image_2 | img_url: 'master' }}" alt="{{ section.settings.text_2 }}">
+        <p>{{ section.settings.text_2 }}</p>
+      </div>
+      <div class="item-ct-badges-footer">
+        <img src="{{ section.settings.image_3 | img_url: 'master' }}" alt="{{ section.settings.text_3 }}">
+        <p>{{ section.settings.text_3 }}</p>
+      </div>
+      <div class="item-ct-badges-footer">
+        <img src="{{ section.settings.image_4 | img_url: 'master' }}" alt="{{ section.settings.text_4 }}">
+        <p>{{ section.settings.text_4 }}</p>
+      </div> -->
+      
+    </div>
+  </div>
+</section>
+
+<style>
+  #badge-footer-{{ section.id }}{
+    background-color: #FCF7EF;
+    padding: 40px 0;
+  }
+  @media (min-width: 768px){
+    #badge-footer-{{ section.id }} .grid-ct-badges-footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+    }
+    #badge-footer-{{ section.id }} .grid-ct-badges-footer .item-ct-badges-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    #badge-footer-{{ section.id }} .grid-ct-badges-footer .item-ct-badges-footer img {
+      width: 60px;
+      height: 60px;
+    }
+    #badge-footer-{{ section.id }} .grid-ct-badges-footer .item-ct-badges-footer p {
+      color: #2A1F1B;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16.8px; /* 120% */
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+  @media (max-width: 767px){
+    #badge-footer-{{ section.id }} .grid-ct-badges-footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      gap: 20px;
+    }
+    #badge-footer-{{ section.id }} .grid-ct-badges-footer .item-ct-badges-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    #badge-footer-{{ section.id }} .grid-ct-badges-footer .item-ct-badges-footer img {
+      width: 36px;
+      height: 36px;
+    }
+    #badge-footer-{{ section.id }} .grid-ct-badges-footer .item-ct-badges-footer p {
+      color: #2A1F1B;
+      text-align: center;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 12px; /* 120% */
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Badge Footer",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text"      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "text_2",
+        "label": "Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_3",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "text_3",
+        "label": "Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_4",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "text_4",
+        "label": "Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Badge Footer"
+      }
+    ]
+  }
+  {% endschema %}

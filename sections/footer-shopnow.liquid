@@ -1,0 +1,151 @@
+<section id="showNow-footer-{{ section.id }}">
+  <div class="page-width">
+    <div class="grid-showNow-footer">
+      <img class="img-1" src="https://cdn.shopify.com/s/files/1/0672/6670/7693/files/Frame_4.svg?v=1702549678" alt="">
+      <h2>{{ section.settings.text }}</h2>
+      <!-- <a href="{{ section.settings.url }}">Shop now</a> -->
+      <a href="/collections/all">Shop now</a>
+      <div class="wrap-stars">
+        <img src="https://cdn.shopify.com/s/files/1/0672/6670/7693/files/Frame.png?v=1702549781" alt="">
+        <img src="https://cdn.shopify.com/s/files/1/0672/6670/7693/files/Group.png?v=1702549781" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #showNow-footer-{{ section.id }} {
+    padding: 30px 0;
+    background-color: #F7F1E8;
+  }
+  @media (min-width: 768px){
+    .grid-showNow-footer {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      align-items: center;
+    }
+    .grid-showNow-footer .img-1 {
+      width: 69px;
+      height: 69px;
+    }
+    .grid-showNow-footer h2 {
+      color: #573C2A;
+      text-align: center;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 107.143% */
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .grid-showNow-footer a {
+      display: flex;
+      width: 331.25px;
+      padding: 14px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-color: #573C2A;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 160% */
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    .wrap-stars {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+    .wrap-stars img:nth-child(1) {
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .wrap-stars img:nth-child(2) {
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  @media (max-width: 767px){
+    .grid-showNow-footer {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      align-items: center;
+      flex-direction: column;
+    }
+    .grid-showNow-footer .img-1 {
+      display: none;
+    }
+    .grid-showNow-footer h2 {
+      color: #573C2A;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 107.143% */
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .grid-showNow-footer a {
+      display: flex;
+      width: 331.25px;
+      padding: 14px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-color: #573C2A;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 19px; /* 160% */
+      letter-spacing: 0.65px;
+      text-transform: uppercase;
+    }
+    .wrap-stars {
+      display: none;
+    }
+  }
+  
+</style>
+
+
+{% schema %}
+  {
+    "name": "Shop Now Footer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Gift Yourself Beauty"
+      },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "URL"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Shop Now Footer"
+      }
+    ]
+  }
+  {% endschema %}
