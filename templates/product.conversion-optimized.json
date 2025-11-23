@@ -16,7 +16,7 @@
         "hero_description": {
           "type": "hero_description",
           "settings": {
-            "hero_description": "<p>A compelling description of who this product is for and the main benefit it provides. Focus on the customer's needs and how this solves their problem.</p>"
+            "hero_description": "<p>The complete grooming solution for men who want a sharp, clean look without juggling multiple tools. Get a close shave, precise trim, and detailed grooming—all with one device.</p>"
           }
         },
         "price": {
@@ -25,11 +25,11 @@
         "benefits": {
           "type": "benefits",
           "settings": {
-            "benefit_1": "Premium quality materials",
-            "benefit_2": "Fast, free shipping on orders over $50",
-            "benefit_3": "30-day money-back guarantee",
-            "benefit_4": "24/7 customer support",
-            "benefit_5": "Trusted by 10,000+ customers"
+            "benefit_1": "3 tools in 1 device—saves money and bathroom space",
+            "benefit_2": "Cut grooming time in half with quick, efficient results",
+            "benefit_3": "Works on all beard types and skin sensitivities",
+            "benefit_4": "Rechargeable battery—up to 60 minutes cordless use",
+            "benefit_5": "Easy to clean under running water in seconds"
           }
         },
         "variant_picker": {
@@ -52,7 +52,7 @@
           "type": "badges-custom",
           "settings": {
             "text": "SECURE CHECKOUT",
-            "text_2": "MONEY-BACK GUARANTEE",
+            "text_2": "30-DAY GUARANTEE",
             "text_3": "FREE SHIPPING",
             "text_4": "24/7 SUPPORT"
           }
@@ -91,28 +91,28 @@
         "step_1": {
           "type": "step",
           "settings": {
-            "step_title": "Choose your option",
-            "step_description": "<p>Select the perfect variant that suits your needs from our available options.</p>"
+            "step_title": "Charge it up",
+            "step_description": "<p>Fully charge your razor using the included USB cable. One full charge gives you up to 60 minutes of cordless grooming.</p>"
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
-            "step_title": "Add to cart",
-            "step_description": "<p>Click the add to cart button and proceed to secure checkout.</p>"
+            "step_title": "Choose your head",
+            "step_description": "<p>Attach the shaver head for a close shave, the trimmer for your beard, or the detail groomer for edges and neckline. Switch between them in seconds.</p>"
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
-            "step_title": "Enjoy your product",
-            "step_description": "<p>Receive your order within 3-5 business days and start enjoying the benefits.</p>"
+            "step_title": "Groom with confidence",
+            "step_description": "<p>Power on and glide smoothly over your face. The razor adjusts to your contours for a comfortable, irritation-free experience. Rinse clean when done.</p>"
           }
         }
       },
       "block_order": ["step_1", "step_2", "step_3"],
       "settings": {
-        "heading": "How it works",
+        "heading": "How to use your 3-in-1 razor",
         "heading_size": "h1",
         "color_scheme": "background-2",
         "padding_top": 48,
@@ -125,30 +125,44 @@
         "feature_1": {
           "type": "feature",
           "settings": {
-            "feature_title": "Premium quality",
-            "feature_description": "<p>Made with the finest materials to ensure long-lasting durability and performance.</p>"
+            "feature_title": "No more clutter",
+            "feature_description": "<p>Replace your separate razor, trimmer, and groomer with one sleek device. Save counter space and simplify your routine.</p>"
           }
         },
         "feature_2": {
           "type": "feature",
           "settings": {
-            "feature_title": "Proven results",
-            "feature_description": "<p>Join thousands of satisfied customers who have experienced the benefits firsthand.</p>"
+            "feature_title": "Skin-friendly design",
+            "feature_description": "<p>Hypoallergenic blades and smooth glide technology reduce irritation, even on sensitive skin. Say goodbye to razor burn and discomfort.</p>"
           }
         },
         "feature_3": {
           "type": "feature",
           "settings": {
-            "feature_title": "Risk-free guarantee",
-            "feature_description": "<p>Try it risk-free for 30 days. If you're not satisfied, we'll refund your money.</p>"
+            "feature_title": "Built to last",
+            "feature_description": "<p>Premium stainless steel blades stay sharp for years. This isn't a disposable razor—it's an investment in looking your best every day.</p>"
+          }
+        },
+        "feature_4": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Perfect for travel",
+            "feature_description": "<p>Compact, cordless, and TSA-friendly. Toss it in your bag and maintain your grooming routine anywhere—from the gym to business trips.</p>"
+          }
+        },
+        "feature_5": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Saves you money",
+            "feature_description": "<p>Stop buying replacement cartridges and disposable razors. One purchase gives you everything you need for years of grooming.</p>"
           }
         }
       },
-      "block_order": ["feature_1", "feature_2", "feature_3"],
+      "block_order": ["feature_1", "feature_2", "feature_3", "feature_4", "feature_5"],
       "settings": {
-        "heading": "Why choose this product",
+        "heading": "Why choose the 3-in-1 razor",
         "heading_size": "h1",
-        "subheading": "<p>Here's what makes this product stand out from the competition.</p>",
+        "subheading": "<p>Discover why thousands of men have ditched their drawer full of grooming tools for this all-in-one solution.</p>",
         "color_scheme": "background-1",
         "padding_top": 48,
         "padding_bottom": 48
@@ -160,30 +174,37 @@
         "persona_1": {
           "type": "persona",
           "settings": {
-            "persona_title": "Busy professionals",
-            "persona_description": "<p>Perfect for those who need a reliable solution that saves time and effort.</p>"
+            "persona_title": "Busy guys on the go",
+            "persona_description": "<p>You need to look sharp fast, whether it's before work, the gym, or a date. No time for complicated grooming routines with multiple tools.</p>"
           }
         },
         "persona_2": {
           "type": "persona",
           "settings": {
-            "persona_title": "First-time users",
-            "persona_description": "<p>Designed to be easy to use, even if you've never tried anything like this before.</p>"
+            "persona_title": "Men with sensitive skin",
+            "persona_description": "<p>Tired of razor burn, irritation, and ingrown hairs? This gentle, hypoallergenic razor gives you a clean look without the discomfort.</p>"
           }
         },
         "persona_3": {
           "type": "persona",
           "settings": {
-            "persona_title": "Quality seekers",
-            "persona_description": "<p>For those who refuse to compromise on quality and value premium products.</p>"
+            "persona_title": "Guys who travel often",
+            "persona_description": "<p>Frequent flyer or weekend warrior? Pack one device instead of three. Keep your grooming routine consistent no matter where you are.</p>"
+          }
+        },
+        "persona_4": {
+          "type": "persona",
+          "settings": {
+            "persona_title": "Anyone tired of buying cartridges",
+            "persona_description": "<p>Stop wasting money on expensive replacement blades. This razor pays for itself in just a few months compared to disposable options.</p>"
           }
         }
       },
-      "block_order": ["persona_1", "persona_2", "persona_3"],
+      "block_order": ["persona_1", "persona_2", "persona_3", "persona_4"],
       "settings": {
-        "heading": "Who is this for?",
+        "heading": "Is this razor right for you?",
         "heading_size": "h1",
-        "description": "<p>This product is designed for people who value quality and results.</p>",
+        "description": "<p>This 3-in-1 electric razor is perfect for men who want an easy, effective grooming solution without the hassle of multiple tools.</p>",
         "color_scheme": "background-2",
         "padding_top": 48,
         "padding_bottom": 48
@@ -195,37 +216,58 @@
         "question_1": {
           "type": "question",
           "settings": {
-            "question": "How long does shipping take?",
-            "answer": "<p>Orders are typically processed within 1-2 business days. Standard shipping takes 3-5 business days, while express shipping takes 1-2 business days.</p>"
+            "question": "Is this safe for sensitive skin?",
+            "answer": "<p>Yes! The 3-in-1 razor features hypoallergenic blades and smooth glide technology designed specifically to minimize irritation. Many of our customers with sensitive skin report less razor burn and discomfort compared to traditional razors. If you have concerns, we recommend starting on the trimmer setting and adjusting as your skin adapts.</p>"
           }
         },
         "question_2": {
           "type": "question",
           "settings": {
-            "question": "What is your return policy?",
-            "answer": "<p>We offer a 30-day money-back guarantee. If you're not completely satisfied with your purchase, simply return it in its original condition for a full refund—no questions asked.</p>"
+            "question": "How do I clean and maintain the razor?",
+            "answer": "<p>Cleaning is easy! After each use, rinse the blade heads under running water for a few seconds—that's it. For deeper cleaning once a week, remove the heads and use the included brush to remove any trapped hair. The razor is water-resistant but should not be fully submerged. Let it air dry before storing.</p>"
           }
         },
         "question_3": {
           "type": "question",
           "settings": {
-            "question": "Is this product suitable for beginners?",
-            "answer": "<p>Absolutely! This product is designed to be user-friendly for all experience levels. We include clear instructions and our support team is available 24/7 to help you.</p>"
+            "question": "How long does the battery last?",
+            "answer": "<p>A full charge provides up to 60 minutes of continuous use—enough for 3-4 weeks of daily grooming for most men. Charging takes approximately 2 hours using the included USB cable. The LED indicator shows when charging is complete. You can also use it while plugged in if you forget to charge.</p>"
           }
         },
         "question_4": {
           "type": "question",
           "settings": {
-            "question": "Do you offer international shipping?",
-            "answer": "<p>Yes, we ship worldwide! International shipping times vary by location, typically 7-14 business days. All duties and taxes are calculated at checkout.</p>"
+            "question": "Can I use this for wet shaving or just dry?",
+            "answer": "<p>The razor is designed primarily for dry use, which is what makes it so quick and convenient. However, it's water-resistant, so you can safely rinse your face before use. For best results and blade longevity, we recommend dry shaving or using it on slightly damp (not wet) skin.</p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "What's included in the box?",
+            "answer": "<p>Your package includes: the main razor unit, 3 interchangeable heads (shaver, trimmer, detail groomer), USB charging cable, cleaning brush, protective travel cap, and a user manual with grooming tips. Everything you need to get started arrives ready to use.</p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "How long does shipping take?",
+            "answer": "<p>We process orders within 1-2 business days. Standard shipping takes 3-5 business days, and express shipping takes 1-2 business days. You'll receive a tracking number as soon as your order ships. Free shipping is included on all orders over $50.</p>"
+          }
+        },
+        "question_7": {
+          "type": "question",
+          "settings": {
+            "question": "What if I'm not satisfied with my purchase?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you're not completely satisfied, return the razor in its original condition within 30 days for a full refund—no questions asked. We want you to love your grooming routine, and we stand behind our product 100%.</p>"
           }
         }
       },
-      "block_order": ["question_1", "question_2", "question_3", "question_4"],
+      "block_order": ["question_1", "question_2", "question_3", "question_4", "question_5", "question_6", "question_7"],
       "settings": {
-        "heading": "Frequently asked questions",
+        "heading": "Your questions answered",
         "heading_size": "h1",
-        "subheading": "<p>Have questions? We've got answers. If you don't find what you're looking for, contact our support team.</p>",
+        "subheading": "<p>Everything you need to know about your 3-in-1 razor. Still have questions? Our support team is here to help 24/7.</p>",
         "color_scheme": "background-1",
         "padding_top": 48,
         "padding_bottom": 48
