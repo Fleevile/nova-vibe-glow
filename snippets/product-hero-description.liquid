@@ -1,0 +1,31 @@
+{% comment %}
+  Renders a benefit-focused hero description
+  Usage:
+  {% render 'product-hero-description', block: block %}
+{% endcomment %}
+
+{%- if block.settings.hero_description != blank -%}
+  <div class="product-hero-description" {{ block.shopify_attributes }}>
+    <p class="product-hero-description__text">{{ block.settings.hero_description }}</p>
+  </div>
+{%- endif -%}
+
+<style>
+  .product-hero-description {
+    margin: 1.5rem 0;
+  }
+
+  .product-hero-description__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 0;
+    color: rgba(var(--color-foreground), 0.85);
+  }
+
+  @media screen and (max-width: 749px) {
+    .product-hero-description__text {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+</style>

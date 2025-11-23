@@ -1,0 +1,245 @@
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="product-faq section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+  <div class="page-width">
+    <div class="faq-content">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="faq__heading {{ section.settings.heading_size }} center">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.subheading != blank -%}
+        <div class="faq__subheading rte center">{{ section.settings.subheading }}</div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="faq__list">
+          {%- for block in section.blocks -%}
+            <details class="faq__item accordion" {{ block.shopify_attributes }}>
+              <summary class="faq__question">
+                <div class="summary__title">
+                  <h3 class="h4 accordion__title">{{ block.settings.question }}</h3>
+                </div>
+                <svg class="icon icon-caret" aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                </svg>
+              </summary>
+              <div class="faq__answer accordion__content rte">
+                {{ block.settings.answer }}
+              </div>
+            </details>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  .faq-content {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .faq__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .faq__subheading {
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .faq__item {
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    border-radius: 0.8rem;
+    background: rgb(var(--color-background));
+    overflow: hidden;
+  }
+
+  .faq__question {
+    padding: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .faq__question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__question .summary__title {
+    flex: 1;
+  }
+
+  .faq__question .accordion__title {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .faq__question .icon-caret {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .faq__item[open] .icon-caret {
+    transform: rotate(180deg);
+  }
+
+  .faq__answer {
+    padding: 0 2rem 2rem 2rem;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media screen and (max-width: 749px) {
+    .faq__question {
+      padding: 1.5rem;
+    }
+
+    .faq__answer {
+      padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Product FAQ",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Frequently asked questions",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "What is your return policy?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>We offer a 30-day money-back guarantee on all products.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product FAQ",
+      "blocks": [
+        {
+          "type": "question",
+          "settings": {
+            "question": "How long does shipping take?",
+            "answer": "<p>Orders are typically processed within 1-2 business days. Standard shipping takes 3-5 business days, while express shipping takes 1-2 business days.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you're not satisfied, simply return the product in its original condition for a full refund.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Is this product suitable for beginners?",
+            "answer": "<p>Yes! This product is designed to be user-friendly for all experience levels, with clear instructions included.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

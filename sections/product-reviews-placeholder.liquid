@@ -1,0 +1,131 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="product-reviews-placeholder section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+  <div class="page-width">
+    <div class="reviews-content">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="reviews__heading {{ section.settings.heading_size }} center">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      <div class="reviews-app-placeholder">
+        <div id="shopify-product-reviews" data-id="{{ product.id }}">
+          <p class="reviews-placeholder__message">
+            {{ section.settings.placeholder_message }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .reviews-content {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  .reviews__heading {
+    margin-bottom: 3rem;
+  }
+
+  .reviews-app-placeholder {
+    min-height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reviews-placeholder__message {
+    text-align: center;
+    color: rgba(var(--color-foreground), 0.6);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 50rem;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Product reviews",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Customer reviews",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_message",
+      "default": "This section is reserved for your reviews app. Install a reviews app like Judge.me, Loox, or Stamped to display customer reviews here.",
+      "label": "Placeholder message",
+      "info": "This message displays when no review app is installed"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product reviews"
+    }
+  ]
+}
+{% endschema %}

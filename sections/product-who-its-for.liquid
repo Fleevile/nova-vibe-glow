@@ -1,0 +1,231 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="product-who-its-for section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+  <div class="page-width">
+    <div class="who-its-for-content">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="who-its-for__heading {{ section.settings.heading_size }} center">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.description != blank -%}
+        <div class="who-its-for__description rte center">{{ section.settings.description }}</div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="who-its-for__personas">
+          {%- for block in section.blocks -%}
+            <div class="who-its-for__persona" {{ block.shopify_attributes }}>
+              {%- if block.settings.persona_icon != blank -%}
+                <div class="persona__icon">
+                  <img src="{{ block.settings.persona_icon | image_url: width: 100 }}" alt="{{ block.settings.persona_title }}" loading="lazy" width="70" height="70">
+                </div>
+              {%- endif -%}
+              <div class="persona__content">
+                {%- if block.settings.persona_title != blank -%}
+                  <h3 class="persona__title h4">{{ block.settings.persona_title }}</h3>
+                {%- endif -%}
+                {%- if block.settings.persona_description != blank -%}
+                  <div class="persona__description rte">{{ block.settings.persona_description }}</div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  .who-its-for-content {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  .who-its-for__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .who-its-for__description {
+    max-width: 70rem;
+    margin: 0 auto 4rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .who-its-for__personas {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .who-its-for__persona {
+    display: flex;
+    gap: 2rem;
+    padding: 2.5rem;
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    border-radius: 1rem;
+    background: rgba(var(--color-background), 0.5);
+  }
+
+  .persona__icon {
+    flex-shrink: 0;
+  }
+
+  .persona__icon img {
+    display: block;
+  }
+
+  .persona__content {
+    flex: 1;
+  }
+
+  .persona__title {
+    margin: 0 0 0.8rem 0;
+  }
+
+  .persona__description {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 750px) {
+    .who-its-for__personas {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .who-its-for__personas {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .who-its-for__persona {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Who is it for",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Who is this for?",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "persona",
+      "name": "Persona",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "persona_icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "persona_title",
+          "label": "Persona title",
+          "default": "Target customer"
+        },
+        {
+          "type": "richtext",
+          "id": "persona_description",
+          "label": "Persona description",
+          "default": "<p>Describe who this product is perfect for.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Who is it for",
+      "blocks": [
+        {
+          "type": "persona"
+        },
+        {
+          "type": "persona"
+        },
+        {
+          "type": "persona"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

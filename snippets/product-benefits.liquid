@@ -1,0 +1,90 @@
+{% comment %}
+  Renders product benefit bullets for conversion optimization
+  Usage:
+  {% render 'product-benefits', block: block %}
+{% endcomment %}
+
+<div class="product-benefits" {{ block.shopify_attributes }}>
+  {%- if block.settings.benefit_1 != blank -%}
+    <ul class="product-benefits__list">
+      {%- if block.settings.benefit_1 != blank -%}
+        <li class="product-benefits__item">
+          <svg class="product-benefits__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="10" fill="#4CAF50" opacity="0.1"/>
+            <path d="M6 10L9 13L14 7" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>{{ block.settings.benefit_1 }}</span>
+        </li>
+      {%- endif -%}
+      {%- if block.settings.benefit_2 != blank -%}
+        <li class="product-benefits__item">
+          <svg class="product-benefits__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="10" fill="#4CAF50" opacity="0.1"/>
+            <path d="M6 10L9 13L14 7" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>{{ block.settings.benefit_2 }}</span>
+        </li>
+      {%- endif -%}
+      {%- if block.settings.benefit_3 != blank -%}
+        <li class="product-benefits__item">
+          <svg class="product-benefits__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="10" fill="#4CAF50" opacity="0.1"/>
+            <path d="M6 10L9 13L14 7" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>{{ block.settings.benefit_3 }}</span>
+        </li>
+      {%- endif -%}
+      {%- if block.settings.benefit_4 != blank -%}
+        <li class="product-benefits__item">
+          <svg class="product-benefits__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="10" fill="#4CAF50" opacity="0.1"/>
+            <path d="M6 10L9 13L14 7" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>{{ block.settings.benefit_4 }}</span>
+        </li>
+      {%- endif -%}
+      {%- if block.settings.benefit_5 != blank -%}
+        <li class="product-benefits__item">
+          <svg class="product-benefits__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="10" fill="#4CAF50" opacity="0.1"/>
+            <path d="M6 10L9 13L14 7" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>{{ block.settings.benefit_5 }}</span>
+        </li>
+      {%- endif -%}
+    </ul>
+  {%- endif -%}
+</div>
+
+<style>
+  .product-benefits {
+    margin: 2rem 0;
+  }
+
+  .product-benefits__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .product-benefits__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .product-benefits__icon {
+    flex-shrink: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .product-benefits__item {
+      font-size: 1.4rem;
+    }
+  }
+</style>

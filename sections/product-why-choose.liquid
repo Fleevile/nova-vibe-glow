@@ -1,0 +1,220 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="product-why-choose section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+  <div class="page-width">
+    <div class="why-choose-content">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="why-choose__heading {{ section.settings.heading_size }} center">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.subheading != blank -%}
+        <div class="why-choose__subheading rte center">{{ section.settings.subheading }}</div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="why-choose__features">
+          {%- for block in section.blocks -%}
+            <div class="why-choose__feature" {{ block.shopify_attributes }}>
+              {%- if block.settings.icon != blank -%}
+                <div class="feature__icon">
+                  <img src="{{ block.settings.icon | image_url: width: 80 }}" alt="{{ block.settings.feature_title }}" loading="lazy" width="60" height="60">
+                </div>
+              {%- endif -%}
+              <div class="feature__content">
+                {%- if block.settings.feature_title != blank -%}
+                  <h3 class="feature__title h4">{{ block.settings.feature_title }}</h3>
+                {%- endif -%}
+                {%- if block.settings.feature_description != blank -%}
+                  <div class="feature__description rte">{{ block.settings.feature_description }}</div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  .why-choose-content {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  .why-choose__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .why-choose__subheading {
+    max-width: 70rem;
+    margin: 0 auto 4rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .why-choose__features {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .feature__icon {
+    flex-shrink: 0;
+  }
+
+  .feature__icon img {
+    display: block;
+  }
+
+  .feature__title {
+    margin: 0 0 0.8rem 0;
+  }
+
+  .feature__description {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 750px) {
+    .why-choose__features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .why-choose__features {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Why choose this",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Why choose this product",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "feature_title",
+          "label": "Feature title",
+          "default": "Feature title"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_description",
+          "label": "Feature description",
+          "default": "<p>Describe why this feature matters.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why choose this",
+      "blocks": [
+        {
+          "type": "feature"
+        },
+        {
+          "type": "feature"
+        },
+        {
+          "type": "feature"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

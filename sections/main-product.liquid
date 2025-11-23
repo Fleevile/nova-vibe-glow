@@ -9,6 +9,7 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'product-conversion-enhancements.css' | asset_url | stylesheet_tag }}
   {%- if product.quantity_price_breaks_configured? -%}
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
@@ -470,6 +471,10 @@
                 block: block,
                 share_link: share_url
               %}
+            {%- when 'hero_description' -%}
+              {% render 'product-hero-description', block: block %}
+            {%- when 'benefits' -%}
+              {% render 'product-benefits', block: block %}
 
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
@@ -1042,6 +1047,55 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.share.settings.title_info.content"
+        }
+      ]
+    },
+    {
+      "type": "hero_description",
+      "name": "Hero description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "hero_description",
+          "label": "Hero description",
+          "default": "<p>A compelling description of who this product is for and the main benefit it provides.</p>",
+          "info": "Brief, benefit-focused text shown at the top"
+        }
+      ]
+    },
+    {
+      "type": "benefits",
+      "name": "Product benefits",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "benefit_1",
+          "label": "Benefit 1",
+          "default": "Key benefit or feature"
+        },
+        {
+          "type": "text",
+          "id": "benefit_2",
+          "label": "Benefit 2",
+          "default": "Another important benefit"
+        },
+        {
+          "type": "text",
+          "id": "benefit_3",
+          "label": "Benefit 3",
+          "default": "Third key benefit"
+        },
+        {
+          "type": "text",
+          "id": "benefit_4",
+          "label": "Benefit 4 (optional)"
+        },
+        {
+          "type": "text",
+          "id": "benefit_5",
+          "label": "Benefit 5 (optional)"
         }
       ]
     },
